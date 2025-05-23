@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>MoodLog Harian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📔 MoodLog Harian</h1>
+
+  <!-- Form input mood dan curhat -->
+  <form id="moodForm">
+    <label for="mood">🎭 Pilih Mood Hari Ini:</label><br>
+    <select id="mood" required>
+      <option value="">--Pilih mood--</option>
+      <option>😊 Bahagia</option>
+      <option>😢 Sedih</option>
+      <option>😠 Marah</option>
+      <option>😌 Tenang</option>
+      <option>😫 Lelah</option>
+    </select><br><br>
+
+    <label for="curhat">📝 Tulis Curhat Singkat (maks. 100 karakter):</label><br>
+    <textarea id="curhat" maxlength="100" placeholder="Hari ini aku merasa..."></textarea><br><br>
+
+    <button type="submit">Simpan</button>
+  </form>
+
+  <!-- Afirmasi akan muncul di sini -->
+  <div id="afirmasi" class="afirmasi-box"></div>
+
+  <!-- Riwayat mood harian -->
+  <h2>📅 Riwayat Mood</h2>
+  <div id="riwayat"></div>
+
+  <!-- Hubungkan ke JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
